@@ -49,7 +49,7 @@ test("anonymous social previews describe the public landing page", async ({
   request,
 }) => {
   const canonical = "https://paykit-landing-page.vercel.app/";
-  const imageUrl = new URL("/social-preview-v2.png", canonical).href;
+  const imageUrl = new URL("/social-preview-v3.png", canonical).href;
   const title = "Paykit — Pay. Get paid.";
   const description =
     "Paykit is the open payment coordination protocol. Pay a person and let your wallet handle the payment logistics.";
@@ -109,7 +109,7 @@ test("anonymous social previews describe the public landing page", async ({
     expect(html).toContain("BitBox");
   }
 
-  const image = await request.get("/social-preview-v2.png", {
+  const image = await request.get("/social-preview-v3.png", {
     maxRedirects: 0,
   });
   expect(image.status()).toBe(200);
