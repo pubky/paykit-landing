@@ -12,7 +12,7 @@ const socialTitle = "Paykit — Pay. Get paid.";
 const description =
   "Paykit is the open payment coordination protocol. Pay a person and let your wallet handle the payment logistics.";
 const socialImage = {
-  url: "/social-preview-v2.png",
+  url: "/social-preview-v3.png",
   type: "image/png",
   width: 1200,
   height: 630,

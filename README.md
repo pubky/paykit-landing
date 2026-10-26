@@ -49,4 +49,4 @@ The Pubky Market link uses the supplied staging address, which may require separ
 
 The Lugano workshop includes Google Calendar and a public `.ics` download with a thirty-minute reminder. Both use 24 October 2026, 14:15–15:00 UTC (16:15–17:00 CEST in Lugano).
 
-Sharing previews use the supplied Paykit logo and a generated network globe. Regenerate the card with `node scripts/render-social-preview.mjs`. Generated artwork provenance is recorded under [docs/design](docs/design), with earlier prompts in [docs/illustration-prompts.md](docs/illustration-prompts.md). Previous animation assets and [rollback instructions](docs/illustration-rollback.md) are preserved.
+Sharing previews use the Paykit wordmark and a generated network globe. Regenerate the card with `node scripts/render-social-preview.mjs`. Generated artwork provenance is recorded under [docs/design](docs/design), with earlier prompts in [docs/illustration-prompts.md](docs/illustration-prompts.md). Previous animation assets and [rollback instructions](docs/illustration-rollback.md) are preserved.

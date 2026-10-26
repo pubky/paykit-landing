@@ -4,10 +4,8 @@ import { chromium } from "@playwright/test";
 
 // Fixed local inputs keep this render independent of the app and external services.
 const globeUrl = new URL("../public/illustrations/social-network-globe-v1.png", import.meta.url);
-const logoUrl = new URL("../public/paykit-logo-white.png", import.meta.url);
-const outputUrl = new URL("../public/social-preview-v2.png", import.meta.url);
+const outputUrl = new URL("../public/social-preview-v3.png", import.meta.url);
 const globe = (await readFile(globeUrl)).toString("base64");
-const logo = (await readFile(logoUrl)).toString("base64");
 const browser = await chromium.launch({ headless: true });
 
 try {
@@ -27,16 +25,14 @@ try {
       .globe { position: absolute; width: 500px; height: 500px; right: 18px; top: 65px;
         object-fit: contain; opacity: .9; }
       .copy { position: absolute; top: 202px; left: 72px; width: 610px; z-index: 1; }
-      .brand { display: flex; align-items: center; gap: 10px; }
-      .logo { display: block; width: 112px; height: 112px; object-fit: contain; }
       h1 { margin: 0; font-size: 108px; line-height: 1.05; font-weight: 600;
         letter-spacing: -5px; }
-      .tagline { margin: 24px 0 0 18px; max-width: 540px; color: #c1c7d2;
+      .tagline { margin: 24px 0 0 6px; max-width: 540px; color: #c1c7d2;
         font-family: Georgia, serif; font-style: italic; font-size: 32px; line-height: 1.35; }
     </style></head><body><main class="card">
       <img class="globe" alt="" src="data:image/png;base64,${globe}">
       <div class="copy">
-        <div class="brand"><img class="logo" alt="" src="data:image/png;base64,${logo}"><h1>Paykit</h1></div>
+        <h1>Paykit</h1>
         <p class="tagline">The open payment coordination protocol</p>
       </div>
     </main></body></html>`, { waitUntil: "load" });
