@@ -10,12 +10,12 @@ The initial trial is tagged `illustration-discovery-layer-v1`. The subsequent
 heading refinement, “I want to pay”, is tagged `illustration-discovery-layer-v2`.
 
 To restore the previous illustration, responsive layout, and explanatory text
-while keeping shared history, run from `feat/paykit-landing`:
+while keeping shared history, run from `main`:
 
 ```sh
 git revert --no-commit illustration-before-discovery-layer..illustration-discovery-layer-v2
 git commit -m "Restore previous Paykit illustration"
-git push origin HEAD:refs/heads/feat/paykit-landing
+git push origin HEAD:refs/heads/main
 npx --yes vercel@64.7.0 --prod --yes --no-wait
 ```
 
@@ -39,7 +39,7 @@ To return to the static version, use:
 ```sh
 git revert --no-commit illustration-before-animation..illustration-animation-v1
 git commit -m "Restore static Paykit payment illustration"
-git push origin HEAD:refs/heads/feat/paykit-landing
+git push origin HEAD:refs/heads/main
 npx --yes vercel@64.7.0 --prod --yes --no-wait
 ```
 
@@ -58,7 +58,7 @@ To restore the first animation:
 ```sh
 git revert --no-commit illustration-before-lively-animation..illustration-lively-animation-v1
 git commit -m "Restore first Paykit animation"
-git push origin HEAD:refs/heads/feat/paykit-landing
+git push origin HEAD:refs/heads/main
 npx --yes vercel@64.7.0 --prod --yes --no-wait
 ```
 

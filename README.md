@@ -47,6 +47,6 @@ The contact form creates an email draft to `info@synonym.to` in the visitor's ma
 
 The Pubky Market link uses the supplied staging address, which may require separate access. Update it when a public destination is available.
 
-The Lugano workshop includes Google Calendar and a public `.ics` download with a thirty-minute reminder. Both use 24 October 2026, 14:15–15:00 UTC (16:15–17:00 CEST in Lugano).
+The Plan ₿ Forum El Salvador section includes Google Calendar and a public `.ics` download for January 29–30, 2027, in San Salvador. Both save the conference as a two-day, all-day event; Paykit talks and where to find us will be announced. The section and its contact option automatically disappear at midnight on February 14, 2027 in San Salvador (06:00 UTC), two weeks after the conference ends. The page checks the server clock on every request; the calendar endpoint returns `410 Gone` after the same cutoff.
 
 Sharing previews use the Paykit wordmark and a generated network globe. Regenerate the card with `node scripts/render-social-preview.mjs`. Generated artwork provenance is recorded under [docs/design](docs/design), with earlier prompts in [docs/illustration-prompts.md](docs/illustration-prompts.md). Previous animation assets and [rollback instructions](docs/illustration-rollback.md) are preserved.
