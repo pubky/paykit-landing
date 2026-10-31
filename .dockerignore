@@ -1,7 +1,6 @@
 .git
 .env*
 .npmrc
-.vercel
 .ssh
 .aws
 node_modules

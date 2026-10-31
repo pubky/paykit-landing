@@ -2,7 +2,7 @@
 
 A public Paykit landing page built with Next.js 16 App Router, React, and TypeScript. Research and source checks are in [docs/research.md](docs/research.md).
 
-Production URL: [paykit-landing-page.vercel.app](https://paykit-landing-page.vercel.app).
+Production URL: [paykit.to](https://paykit.to).
 
 The design uses graphite surfaces, Geist typography, serif title accents, and orange highlights. The introduction includes a click-to-load video. The five-state payment animation explains payment options, registration, choosing a contact, discovering a shared rail, and direct wallet payment. Its copy and profiles stay in server components; the client controller handles playback. Visitors can select steps or pause. Autoplay runs while the scene is visible and respects reduced-motion preferences.
 
@@ -50,10 +50,6 @@ The multi-stage image uses Node.js 22 and Next.js standalone output. It runs as 
 Building requires network access to npm and Google Fonts; the generated fonts are served locally at runtime. Local environment files, credentials, dependencies, and build output are excluded by `.dockerignore`.
 
 Keep requests routed to the Node server and honor its cache headers: the conference section is evaluated on every page request, and `/api/calendar` returns `410 Gone` after the conference expiry. This deployment requires a running server rather than a static file export.
-
-## Deploy on Vercel
-
-Import this repository using the Next.js framework preset, or deploy using `npx vercel --prod`. The existing Vercel project's verified production domain is `paykit-landing-page.vercel.app`. Automatic Git deployments are not connected, so use the CLI unless that integration is enabled.
 
 The temporary password gate and its login/session endpoints have been removed. Public pages allow indexing. CSP, MIME sniffing protection, framing restrictions, and the other security headers remain configured in `next.config.ts`.
 
