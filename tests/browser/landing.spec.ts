@@ -48,7 +48,7 @@ test("the public launch serves HTML, RSC, and calendars without a session", asyn
 test("anonymous social previews describe the public landing page", async ({
   request,
 }) => {
-  const canonical = "https://paykit-landing-page.vercel.app/";
+  const canonical = "https://paykit.to/";
   const imageUrl = new URL("/social-preview-v3.png", canonical).href;
   const title = "Paykit — Pay. Get paid.";
   const description =
